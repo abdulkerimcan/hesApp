@@ -8,14 +8,14 @@
     tools:context=".MainActivity">
 
 
+
     <fragment
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:id="@+id/main_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:defaultNavHost= "true"
         app:navGraph='@navigation/nav_graph' />
-
 
    <com.google.android.material.bottomappbar.BottomAppBar
        android:layout_width="match_parent"
@@ -24,6 +24,8 @@
        app:fabCradleMargin="10dp"
        app:fabCradleRoundedCornerRadius="20dp"
        android:layout_gravity="bottom" >
+
+
 
        <com.google.android.material.bottomnavigation.BottomNavigationView
            android:id="@+id/bottomNavigationView"
@@ -34,7 +36,11 @@
            app:elevation="0dp"
            app:menu="@menu/bottom_nav_menu"/>
 
+
+
    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

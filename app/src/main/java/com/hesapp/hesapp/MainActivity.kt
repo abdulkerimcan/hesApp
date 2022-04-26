@@ -22,20 +22,9 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigationView.menu.getItem(2).isEnabled = false
 
 
-        val Navhost = supportFragmentManager.findFragmentById(R.id.main_fragment) as NavHostFragment
-        val navController = Navhost.navController
-
-
-        setupWithNavController(binding.bottomNavigationView,navController)
-
-        val cart = CartFragment()
-        val payment = PaymentFragment()
-        val profile = ProfileFragment()
-        val menu = MenuFragment()
-
-
-
-
+        val navController = findNavController(R.id.main_fragment)
+        val bottomNavView = binding.bottomNavigationView
+        bottomNavView.setupWithNavController(navController)
 
 
     }
