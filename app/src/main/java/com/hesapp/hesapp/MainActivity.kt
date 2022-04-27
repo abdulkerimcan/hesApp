@@ -3,11 +3,13 @@ package com.hesapp.hesapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.airbnb.lottie.LottieAnimationView
 import com.hesapp.hesapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
