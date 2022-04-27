@@ -1,5 +1,6 @@
 package com.hesapp.hesapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
@@ -26,6 +27,9 @@ class MainActivity : AppCompatActivity() {
         val bottomNavView = binding.bottomNavigationView
         bottomNavView.setupWithNavController(navController)
 
-
+        binding.fab.setOnClickListener {
+            val intent = Intent(this,CodeScanActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
